@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MovieTask</string>
+    <string name="search">Search Movies</string>
+    <string name="retry">Retry</string>
+    <string name="no_data">No movies found</string>
+    <string name="recent_searches">Recent Searches</string>
+    <string name="no_recent_search">No recent searches.\nTry searching for a movie.</string>
+</resources>

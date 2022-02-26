@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/padding_16">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_poster"
+        android:layout_width="110dp"
+        android:layout_height="140dp"
+        android:layout_marginHorizontal="@dimen/margin_16"
+        android:scaleType="fitXY"
+        android:src="@color/white_400"
+        app:riv_corner_radius="@dimen/radius_10" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_poster"
+        android:layout_marginHorizontal="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_12"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18"
+        android:textStyle="bold"
+        tools:text="Batman" />
+
+    <TextView
+        android:id="@+id/tv_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginHorizontal="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_4"
+        android:textColor="@color/white_400"
+        android:textSize="@dimen/text_size_14"
+        tools:text="2020" />
+
+</RelativeLayout>

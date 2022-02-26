@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/padding_16"
+    android:paddingVertical="@dimen/padding_12">
+
+    <ImageView
+        android:id="@+id/iv_recent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_round_access_time_24"
+        app:tint="@color/white_600"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_recent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginHorizontal="@dimen/margin_16"
+        android:layout_toStartOf="@id/iv_go"
+        android:layout_toEndOf="@id/iv_recent"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_14"
+        tools:text="Jared Dubin" />
+
+    <ImageView
+        android:id="@+id/iv_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_baseline_call_made_24"
+        app:tint="@color/white_600"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>
