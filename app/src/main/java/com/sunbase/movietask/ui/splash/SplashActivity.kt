@@ -12,9 +12,8 @@ import com.sunbase.movietask.ui.searchMovie.MainActivity
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 
-@Suppress("DEPRECATION")
-@ExperimentalCoroutinesApi
 @SuppressLint("CustomSplashScreen")
+@ExperimentalCoroutinesApi
 @AndroidEntryPoint
 class SplashActivity : AppCompatActivity() {
 
@@ -62,6 +61,7 @@ class SplashActivity : AppCompatActivity() {
         }
     }
 
+    @Suppress("DEPRECATION")
     private fun hideSystemUIAndNavigation(activity: Activity) {
         val decorView: View = activity.window.decorView
         decorView.systemUiVisibility =
