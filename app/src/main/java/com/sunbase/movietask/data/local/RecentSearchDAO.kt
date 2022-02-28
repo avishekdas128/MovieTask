@@ -1,7 +1,8 @@
-package com.sunbase.movietask.data.db
+package com.sunbase.movietask.data.local
 
+import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.sunbase.movietask.data.db.model.RecentSearch
+import com.sunbase.movietask.data.local.model.RecentSearch
 
 @Dao
 interface RecentSearchDAO {
@@ -29,4 +30,7 @@ interface RecentSearchDAO {
 
     @Query("SELECT * FROM recent_search ORDER BY id DESC")
     suspend fun getRecentSearches(): List<RecentSearch>
+
+    @Query("SELECT * FROM recent_search ORDER BY id DESC")
+    fun getTestRecentSearches(): LiveData<List<RecentSearch>>
 }

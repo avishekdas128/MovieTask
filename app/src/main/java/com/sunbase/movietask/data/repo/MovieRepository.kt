@@ -2,11 +2,10 @@ package com.sunbase.movietask.data.repo
 
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
-import androidx.paging.liveData
 import com.sunbase.movietask.data.network.MovieService
 import com.sunbase.movietask.data.remote.MoviePagingSource
-import com.sunbase.movietask.data.db.model.RecentSearch
-import com.sunbase.movietask.data.db.RecentSearchDAO
+import com.sunbase.movietask.data.local.model.RecentSearch
+import com.sunbase.movietask.data.local.RecentSearchDAO
 import javax.inject.Inject
 import javax.inject.Singleton
 

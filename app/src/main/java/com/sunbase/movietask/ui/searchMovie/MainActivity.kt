@@ -12,7 +12,7 @@ import androidx.paging.LoadState
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.sunbase.movietask.R
-import com.sunbase.movietask.data.db.model.RecentSearch
+import com.sunbase.movietask.data.local.model.RecentSearch
 import com.sunbase.movietask.databinding.ActivityMainBinding
 import com.sunbase.movietask.ui.adapter.LoadStateAdapter
 import com.sunbase.movietask.ui.adapter.MovieAdapter

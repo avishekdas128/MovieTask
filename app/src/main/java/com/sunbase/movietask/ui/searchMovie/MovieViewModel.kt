@@ -2,7 +2,7 @@ package com.sunbase.movietask.ui.searchMovie
 
 import androidx.lifecycle.*
 import androidx.paging.cachedIn
-import com.sunbase.movietask.data.db.model.RecentSearch
+import com.sunbase.movietask.data.local.model.RecentSearch
 import com.sunbase.movietask.data.repo.MovieRepository
 import com.sunbase.movietask.util.Constants
 import dagger.hilt.android.lifecycle.HiltViewModel

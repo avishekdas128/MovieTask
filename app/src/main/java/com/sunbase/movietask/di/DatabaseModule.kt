@@ -2,8 +2,8 @@ package com.sunbase.movietask.di
 
 import android.app.Application
 import androidx.room.Room
-import com.sunbase.movietask.data.db.RecentSearchDAO
-import com.sunbase.movietask.data.db.RecentSearchDatabase
+import com.sunbase.movietask.data.local.RecentSearchDAO
+import com.sunbase.movietask.data.local.RecentSearchDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -27,7 +27,7 @@ object DatabaseModule {
     }
 
     @Provides
-    fun provideArticleDao(db: RecentSearchDatabase): RecentSearchDAO {
-        return db.getArticleDao()
+    fun provideRecentSearchDAO(db: RecentSearchDatabase): RecentSearchDAO {
+        return db.getRecentSearchDAO()
     }
 }
